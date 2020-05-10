@@ -116,10 +116,12 @@ body {
   color: #ffffff;
   transition: 0.2s;
   transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu_active {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -196,9 +198,10 @@ body {
 
 .hero {
   background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top;
-  background-size: contain;
-  padding-top: 180px;
+  background-size: cover;
+  padding-top: 120px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -215,8 +218,8 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top left 30%;
+    background-size: 100%;
+    background-position: top right;
   }
 }
 /*# sourceMappingURL=style.css.map */
